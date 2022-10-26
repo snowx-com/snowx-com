@@ -121,7 +121,7 @@ export const followSNS = [
     icon: '/img/discord-button.png',
   },
   {
-    url: 'https://medium.com/@snowX.com',
+    url: 'https://0xSnowX.medium.com/',
     icon: '/img/medium-button.png',
   },
 ]
@@ -129,7 +129,7 @@ export const followSNS = [
 export const FaQForUser = [
   {
     q: 'Where can I download SnowX?',
-    a: 'You can follow these instructions on <a href="https://medium.com/@snowX.com/how-to-download-sidequest-and-install-snowx-bfedcfccf64b" target="_blank" rel="noopener noreferrer">how to download SideQuest!</a><br/>Video: <a href="https://www.youtube.com/watch?v=emSAowT0u-k" target="_blank" rel="noopener noreferrer">How to Install SnowX</a>',
+    a: 'You can follow these instructions on <a href="https://0xsnowx.medium.com/how-to-download-sidequest-and-install-snowx-bfedcfccf64b" target="_blank" rel="noopener noreferrer">how to download SideQuest!</a><br/>Video: <a href="https://www.youtube.com/watch?v=emSAowT0u-k" target="_blank" rel="noopener noreferrer">How to Install SnowX</a>',
   },
   {
     q: 'Where can I see the artwork I purchased? / Can I see the artwork on Opensea?',
@@ -141,7 +141,7 @@ export const FaQForUser = [
   },
   {
     q: 'How can I download Sidequest?',
-    a: 'You can follow these instructions on <a href="https://medium.com/@snowX.com/how-to-download-sidequest-and-install-snowx-bfedcfccf64b" target="_blank" rel="noopener noreferrer">how to download SideQuest!</a><br/>Video: <a href="https://www.youtube.com/watch?v=emSAowT0u-k" target="_blank" rel="noopener noreferrer">How to Install SnowX</a>',
+    a: 'You can follow these instructions on <a href="https://0xsnowx.medium.com/how-to-download-sidequest-and-install-snowx-bfedcfccf64b" target="_blank" rel="noopener noreferrer">how to download SideQuest!</a><br/>Video: <a href="https://www.youtube.com/watch?v=emSAowT0u-k" target="_blank" rel="noopener noreferrer">How to Install SnowX</a>',
   },
   {
     q: 'I opened the email and opened Metamask, but the pop up did not work.',
@@ -172,7 +172,7 @@ export const faQForArtist = [
   },
   {
     q: 'How do I download SnowX?',
-    a: 'You can follow these instructions on <a href="https://medium.com/@snowX.com/how-to-download-sidequest-and-install-snowx-bfedcfccf64b" target="_blank" rel="noopener noreferrer">how to download SideQuest!</a><br/>Video: <a href="https://www.youtube.com/watch?v=emSAowT0u-k" target="_blank" rel="noopener noreferrer">How to Install SnowX</a>',
+    a: 'You can follow these instructions on <a href="https://0xsnowx.medium.com/how-to-download-sidequest-and-install-snowx-bfedcfccf64b" target="_blank" rel="noopener noreferrer">how to download SideQuest!</a><br/>Video: <a href="https://www.youtube.com/watch?v=emSAowT0u-k" target="_blank" rel="noopener noreferrer">How to Install SnowX</a>',
   },
   {
     q: "I don't have Metamask.",
