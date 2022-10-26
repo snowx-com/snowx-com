@@ -1,0 +1,25 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FBFBFB;
+}
+
+img {
+  width: 100%;
+}
+
+@-webkit-keyframes artsSlide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2940px, 0, 0);
+  }
+}
+@keyframes artsSlide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2940px, 0, 0);
+  }
+}

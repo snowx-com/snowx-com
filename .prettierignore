@@ -1,0 +1,15 @@
+**/node_modules/**/*
+htdocs/**/*
+dist/**/*
+**/*.glsl
+**/*.vert
+**/*.frag
+package.json
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+tsconfig.json
+.editorconfig
+.gitignore
+README.md
