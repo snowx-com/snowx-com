@@ -88,6 +88,7 @@ const topPageCSS = {
       justify-content: center;
       align-items: normal;
       flex-direction: column;
+      padding: 0 16px;
       @media screen and (max-width: 1023px) {
         width: 100%;
         padding: 20px;
@@ -261,6 +262,11 @@ const topPageCSS = {
       display: flex;
       align-items: center;
       align-items: flex-end;
+
+      a {
+        color: inherit;
+      }
+
       @media screen and (max-width: 1023px) {
         flex-direction: column;
         align-items: center;
@@ -436,11 +442,9 @@ const TopPageTemplate: React.FC = () => {
             <div css={topPageCSS.catchCopyWrapper}>
               <div>
                 <h2 css={topPageCSS.catchCopy}>
-                  {'The world’s first native'}
+                  THE 3D ART MARKETPLACE
                   <br />
-                  {'3D NFT Marketplace'}
-                  <br />
-                  {'on VR'}
+                  FOR VR HEADSETS
                 </h2>
                 <div
                   css={css`
@@ -530,10 +534,9 @@ const TopPageTemplate: React.FC = () => {
                 <span>Let’ see and purchase 3D NFT artworks in VR!</span>
               </h2>
               <p css={topPageCSS.description.text}>
-                SnowX is the first NFT marketplace in VR. Creators mint 3D NFTs. And collectors
-                download the app into their VR headset, connect the mobile app to their wallet, and
-                purchase NFTs. This is how to buy 3D NFTs in VR. In VR, you can walk around and
-                touch the artwork to feel the artwork.
+                SnowX is the 3D NFT marketplace for VR headsets. Creators mint 3D NFTs, collectors
+                download the app into their VR headset, connect their mobile wallets, and purchase
+                NFTs.
               </p>
               <div css={topPageCSS.description.btnWrapper}>
                 <HashLink smooth to={'/#mint'} scroll={(el) => scrollWithOffset(el, 150)}>
@@ -686,6 +689,40 @@ const TopPageTemplate: React.FC = () => {
             </div>
             <div css={topPageCSS.download.stepItem}>
               <div>
+                <h3>To sign up with developer account</h3>
+                <p>
+                  Create an Org manager account for Quest 2 Developer account. Please create an Org
+                  manager account from{' '}
+                  <a
+                    href="https://developer.oculus.com/manage/organizations/create/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+            <div css={topPageCSS.download.arrowWrapper}>
+              <svg
+                width="96"
+                height="22"
+                viewBox="0 0 96 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 2L48 20L94.5 2"
+                  stroke="#90B4CE"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+            <div css={topPageCSS.download.stepItem}>
+              <div>
                 <h3>Turn on your developer mode on oculus.</h3>
                 <p>
                   Please pair your oculus device with your mobile app→ go to connected Oculus→ click
@@ -713,12 +750,12 @@ const TopPageTemplate: React.FC = () => {
             </div>
             <div css={topPageCSS.download.stepItem}>
               <div>
-                <h3>Connect your oculus to your PC/Mac.</h3>
+                <h3>Download the app</h3>
                 <p>
-                  Once you connect your oculus to your PC/Mac, please click allow for “Allow access
-                  to data” on your oculus. Search SnowX on Sidequest, and click “Download
-                  app(sideload)”. Once the download is completed, you can find the SnowX app under
-                  “unknown sources” in the top right corner of the Oculus library.
+                  Connect your headset to your PC/Mac with a cable, and click “Allow access to data”
+                  on your headset. Search SnowX on Sidequest, and click “Download app(sideload)”.
+                  Once the download is completed, you can find the SnowX app under “unknown sources”
+                  in the top right corner of the Oculus library.
                 </p>
               </div>
               <div
@@ -1460,9 +1497,9 @@ const TopPageTemplate: React.FC = () => {
                   <br />
                   NFT marketplace for VR headsets <br />
                   <br />
-                  For further Queries
+                  For further queries
                   <br />
-                  Mail: support@snowx.com
+                  Mail: t@snowx.com
                 </p>
               </div>
             </div>
@@ -1613,10 +1650,19 @@ const TopPageTemplate: React.FC = () => {
             css={[
               topPageCSS.awarded.awards,
               css`
+                width: 60%;
+                margin: 0 auto;
+                flex-wrap: wrap;
                 gap: 16px;
 
                 & > div {
-                  width: auto;
+                  width: 30%;
+                }
+
+                @media screen and (max-width: 1023px) {
+                  & > div {
+                    width: 100%;
+                  }
                 }
               `,
             ]}
@@ -1625,8 +1671,8 @@ const TopPageTemplate: React.FC = () => {
               <div key={img}>
                 <img
                   css={css`
-                    width: 240px;
-                    height: 115px;
+                    width: 100%;
+                    height: 126px;
                     object-fit: cover;
 
                     @media screen and (max-width: 1023px) {
