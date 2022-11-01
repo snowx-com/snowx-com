@@ -204,4 +204,4 @@ export const faQForArtist = [
   },
 ]
 
-export const featuredImgList = ['eth-global', 'caf', 'cawa', 'ivs', 'disrupt']
+export const featuredImgList = ['eth-global', 'caf', 'cawa', 'ivs', 'disrupt', 'sfbw']
