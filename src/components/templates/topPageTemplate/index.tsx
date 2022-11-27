@@ -423,7 +423,7 @@ const topPageCSS = {
 }
 
 const TopPageTemplate: React.FC = () => {
-  const [width, height] = useWindowSize()
+  const [width] = useWindowSize()
   const scrollWithOffset = (el: HTMLElement, offset: number) => {
     const elementPosition = el.offsetTop - offset
     window.scroll({
@@ -511,6 +511,43 @@ const TopPageTemplate: React.FC = () => {
                   >
                     <span>Other device</span>
                     <span>Coming soon...</span>
+                  </button>
+                  <button
+                    css={[
+                      buttonStyles.downloadButton,
+                      css`
+                        position: relative;
+                        width: 200px;
+                        border: 1px solid #fff;
+                        min-height: 60px;
+                        overflow: hidden;
+
+                        span {
+                          transition: all 0.3s;
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%, -50%);
+                        }
+                        span:nth-of-type(2) {
+                          transform: translate(200px, -50%);
+                          white-space: nowrap;
+                        }
+
+                        &:hover {
+                          opacity: 0.8;
+                        }
+                      `,
+                    ]}
+                    onClick={() =>
+                      window.open(
+                        'https://www.spatial.io/s/SnowX-buildathon-637ffc3a78a4c9000125c297?share=8398898266032774890',
+                        '_blank',
+                        'noreferrer'
+                      )
+                    }
+                  >
+                    <span>Desktop/Mobile(Spatial)</span>
                   </button>
                 </div>
               </div>
